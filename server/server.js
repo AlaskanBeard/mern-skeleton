@@ -32,8 +32,7 @@ var options = {
 };
 // https server
 https.createServer(options, function (req, res) {
-  res.end('secure!');
-}).listen(443);
+},app).listen(443);
 
 // Redirect from http port 80 to https
 var http = require('http');
