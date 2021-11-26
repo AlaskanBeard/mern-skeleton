@@ -36,7 +36,7 @@ export default function Home(){
     return (
         <Card className={classes.card}>
           <Typography variant="h6" className={classes.title}>
-            Home Page
+            Test Update
           </Typography>
           <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
           <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@boudewijn_huysmans" target="_blank" rel="noopener noreferrer">Boudewijn Huysmans</a> on Unsplash</Typography>
