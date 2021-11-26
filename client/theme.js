@@ -1,5 +1,5 @@
-import { createMuiTheme } from '@material-ui/core/styles'
-import { pink } from '@material-ui/core/colors'
+import { createMuiTheme } from '@mui/core/styles'
+import { pink } from '@mui/core/colors'
 
 const theme = createMuiTheme({
     typography: {
