@@ -35,8 +35,15 @@ export default function Home(){
       <CssBaseline>
         <Paper> 
           <Typography variant="h6" className={classes.title}>
-              Test Update
-            </Typography>
+            Services
+          </Typography>
+          <Typography variant="body1">
+            This is a test list of services:
+              * Test 1
+              * Test 2
+              * Test 3
+              * Test 4
+          </Typography>
         </Paper>
       </CssBaseline>
         
