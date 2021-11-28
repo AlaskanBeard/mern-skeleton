@@ -37,6 +37,17 @@ export default function Home(){
       <CssBaseline>
         <Card className={classes.card}>          
           <Typography variant="h4" className={classes.title}>
+            About
+          </Typography>
+          <Typography variant="body1">
+            <h2>This is a test list of services:</h2>
+            <p>
+              Hi, I'm bob. I do bob things, all day, every day, because I'm bob.
+            </p>
+          </Typography>
+        </Card>
+        <Card className={classes.card}>          
+          <Typography variant="h4" className={classes.title}>
             Services
           </Typography>
           <Typography variant="body1">
