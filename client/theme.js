@@ -20,7 +20,8 @@ const theme = createTheme({
     },
       openTitle: '#3f4771',
       protectedTitle: pink['400'],
-      type: 'dark'
+      type: 'dark',
+      mode: 'dark'
     }
   })
 
