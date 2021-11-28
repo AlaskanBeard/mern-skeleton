@@ -1,8 +1,10 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles'
+import Card from '@mui/material/Card'
+import CardContent from '@mui/material/CardContent'
+import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import CssBaseline from '@mui/material/CssBaseline'
-import Paper from '@mui/material/Paper'
+import unicornbikeImg from './../assets/images/unicornbike.jpg'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -26,10 +28,6 @@ const useStyles = makeStyles(theme => ({
     '& a':{
       color: '#3f4771'
     } 
-  },
-  main: {
-    elevation: 2,
-    m: -2
   }
 }))
 
@@ -37,7 +35,7 @@ export default function Home(){
   const classes = useStyles()
     return (
       <CssBaseline>
-        <Paper className={classes.main}>
+        <Card className={classes.card}>          
           <Typography variant="h4" className={classes.title}>
             Services
           </Typography>
@@ -50,9 +48,8 @@ export default function Home(){
               <li>Test 4</li>
             </ul>
           </Typography>
-        </Paper>
+        </Card>
       </CssBaseline>
-        
     )
 }
 
