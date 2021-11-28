@@ -1,17 +1,17 @@
 import React, { useState, useEffect } from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import ListItemText from '@material-ui/core/ListItemText'
-import Avatar from '@material-ui/core/Avatar'
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
-import Edit from '@material-ui/icons/Edit'
-import Person from '@material-ui/icons/Person'
-import Divider from '@material-ui/core/Divider'
+import { makeStyles } from '@mui/styles'
+import Paper from '@mui/material/Paper'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemAvatar from '@mui/material/ListItemAvatar'
+import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction'
+import ListItemText from '@mui/material/ListItemText'
+import Avatar from '@mui/material/Avatar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import EditIcon from '@mui/icons-material/Edit';
+import PersonIcon from '@mui/icons-material/Person';
+import Divider from '@mui/material/Divider'
 import DeleteUser from './DeleteUser'
 import auth from './../auth/auth-helper'
 import {read} from './api-user.js'
@@ -68,7 +68,7 @@ export default function Profile({ match }) {
           <ListItem>
             <ListItemAvatar>
               <Avatar>
-                <Person/>
+                <PersonIcon/>
               </Avatar>
             </ListItemAvatar>
             <ListItemText primary={user.name} secondary={user.email}/> {
@@ -76,7 +76,7 @@ export default function Profile({ match }) {
               (<ListItemSecondaryAction>
                 <Link to={"/user/edit/" + user._id}>
                   <IconButton aria-label="Edit" color="primary">
-                    <Edit/>
+                    <EditIcon/>
                   </IconButton>
                 </Link>
                 <DeleteUser userId={user._id}/>

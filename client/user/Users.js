@@ -1,16 +1,16 @@
 import React, {useState, useEffect} from 'react'
-import { makeStyles } from '@material-ui/core/styles'
-import Paper from '@material-ui/core/Paper'
-import List from '@material-ui/core/List'
-import ListItem from '@material-ui/core/ListItem'
-import ListItemAvatar from '@material-ui/core/ListItemAvatar'
-import ListItemSecondaryAction from '@material-ui/core/ListItemSecondaryAction'
-import ListItemText from '@material-ui/core/ListItemText'
-import Avatar from '@material-ui/core/Avatar'
-import IconButton from '@material-ui/core/IconButton'
-import Typography from '@material-ui/core/Typography'
-import ArrowForward from '@material-ui/icons/ArrowForward'
-import Person from '@material-ui/icons/Person'
+import { makeStyles } from '@mui/styles'
+import Paper from '@mui/material/Paper'
+import List from '@mui/material/List'
+import ListItem from '@mui/material/ListItem'
+import ListItemAvatar from '@mui/material/ListItemAvatar'
+import ListItemSecondaryAction from '@mui/material/ListItemSecondaryAction'
+import ListItemText from '@mui/material/ListItemText'
+import Avatar from '@mui/material/Avatar'
+import IconButton from '@mui/material/IconButton'
+import Typography from '@mui/material/Typography'
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import PersonIcon from '@mui/icons-material/Person';
 import {Link} from 'react-router-dom'
 import {list} from './api-user.js'
 
@@ -58,13 +58,13 @@ export default function Users() {
                     <ListItem button>
                       <ListItemAvatar>
                         <Avatar>
-                          <Person/>
+                          <PersonIcon/>
                         </Avatar>
                       </ListItemAvatar>
                       <ListItemText primary={item.name}/>
                       <ListItemSecondaryAction>
                       <IconButton>
-                          <ArrowForward/>
+                          <ArrowForwardIcon/>
                       </IconButton>
                       </ListItemSecondaryAction>
                     </ListItem>
