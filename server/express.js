@@ -16,6 +16,7 @@ import MainRouter from './../client/MainRouter'
 import { StaticRouter } from 'react-router-dom'
 
 import { ThemeProvider } from '@mui/material/styles'
+import CssBaseline from '@mui/material/CssBaseline'
 import { ServerStyleSheets } from '@mui/styles'
 import theme from './../client/theme'
 //end
@@ -52,7 +53,9 @@ app.get('*', (req, res) => {
     sheets.collect(
           <StaticRouter location={req.url} context={context}>
             <ThemeProvider theme={theme}>
-              <MainRouter />
+              <CssBaseline>
+                <MainRouter />
+              </CssBaseline>
             </ThemeProvider>
           </StaticRouter>
         )
