@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import unicornbikeImg from './../assets/images/unicornbike.jpg'
+import CssBaseline from '@mui/material/CssBaseline'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -34,16 +35,12 @@ const useStyles = makeStyles(theme => ({
 export default function Home(){
   const classes = useStyles()
     return (
-        <Card className={classes.card}>
-          
-          <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
-          <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@boudewijn_huysmans" target="_blank" rel="noopener noreferrer">Boudewijn Huysmans</a> on Unsplash</Typography>
-          <CardContent>
-            <Typography variant="body1" component="p">
-              Welcome to the MERN Skeleton home page.
-            </Typography>
-          </CardContent>
-        </Card>
+      <CssBaseline>
+        <Typography variant="h6" className={classes.title}>
+            Test Update
+          </Typography>
+      </CssBaseline>
+        
     )
 }
 
