@@ -34,16 +34,16 @@ export default function Home(){
     return (
       <CssBaseline>
         <Paper elevation={2}> 
-          <Typography variant="h2" className={classes.title}>
+          <Typography variant="h4" className={classes.title}>
             Services
           </Typography>
           <Typography variant="body1">
             <h6>This is a test list of services:</h6>
             <ul>
-              * Test 1
-              * Test 2
-              * Test 3
-              * Test 4
+              <li>* Test 1</li>
+              <li>* Test 2</li>
+              <li>* Test 3</li>
+              <li>* Test 4</li>
             </ul>
           </Typography>
         </Paper>
