@@ -8,7 +8,6 @@ import CssBaseline from '@mui/material/CssBaseline'
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 900,
     margin: 'auto',
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5)
