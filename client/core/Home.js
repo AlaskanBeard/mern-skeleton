@@ -33,16 +33,18 @@ export default function Home(){
   const classes = useStyles()
     return (
       <CssBaseline>
-        <Paper elevation={3}> 
-          <Typography variant="h6" className={classes.title}>
+        <Paper elevation={2}> 
+          <Typography variant="h2" className={classes.title}>
             Services
           </Typography>
           <Typography variant="body1">
-            This is a test list of services:
+            <h6>This is a test list of services:</h6>
+            <ul>
               * Test 1
               * Test 2
               * Test 3
               * Test 4
+            </ul>
           </Typography>
         </Paper>
       </CssBaseline>
