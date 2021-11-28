@@ -8,7 +8,7 @@ import unicornbikeImg from './../assets/images/unicornbike.jpg'
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 600,
+    maxWidth: 900,
     margin: 'auto',
     marginTop: theme.spacing(5),
     marginBottom: theme.spacing(5)
