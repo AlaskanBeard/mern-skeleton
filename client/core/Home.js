@@ -26,6 +26,10 @@ const useStyles = makeStyles(theme => ({
     '& a':{
       color: '#3f4771'
     } 
+  },
+  main: {
+    elevation: 2,
+    m: -2
   }
 }))
 
@@ -33,17 +37,17 @@ export default function Home(){
   const classes = useStyles()
     return (
       <CssBaseline>
-        <Paper elevation={2}> 
+        <Paper className={classes.main}>
           <Typography variant="h4" className={classes.title}>
             Services
           </Typography>
           <Typography variant="body1">
             <h6>This is a test list of services:</h6>
             <ul>
-              <li>* Test 1</li>
-              <li>* Test 2</li>
-              <li>* Test 3</li>
-              <li>* Test 4</li>
+              <li>Test 1</li>
+              <li>Test 2</li>
+              <li>Test 3</li>
+              <li>Test 4</li>
             </ul>
           </Typography>
         </Paper>
