@@ -1,6 +1,7 @@
 import { createTheme } from '@mui/material/styles'
 import { pink } from '@mui/material/colors'
 
+
 const theme = createTheme({
     typography: {
       useNextVariants: true,
@@ -18,7 +19,7 @@ const theme = createTheme({
       dark: '#c60055',
       contrastText: '#000',
     },
-      openTitle: '#3f4771',
+      openTitle: '#fff',
       protectedTitle: pink['400'],
       type: 'dark',
       mode: 'dark'
