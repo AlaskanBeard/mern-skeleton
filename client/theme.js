@@ -22,7 +22,11 @@ const theme = createTheme({
       openTitle: '#fff',
       protectedTitle: pink['400'],
       type: 'dark',
-      mode: 'dark'
+      mode: 'dark',
+      background: {
+        default: '#121212',
+        paper: '#111822'
+      }
     }
   })
 
