@@ -5,6 +5,7 @@ import CardContent from '@mui/material/CardContent'
 import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
 import CssBaseline from '@mui/material/CssBaseline'
+import Link from '@mui/material/Link'
 
 const useStyles = makeStyles(theme => ({
   card: {
@@ -32,22 +33,29 @@ const useStyles = makeStyles(theme => ({
     borderBottom: '1px solid #d0d0d0',
     '& a':{
       color: '#3f4771'
-    } 
+    }
+  },
+  servicelist: {
+    columns: 2
+  },
+  mailtellinks: {
+    color: '#fff',
+    textDecoration: 'underline',
+    selected: '#5c67a3'
   }
 }))
 
 export default function Home(){
   const classes = useStyles()
     return (
-      <CssBaseline>
+      <div>
         <Card className={classes.card}>          
           <Typography variant="h4" className={classes.title}>
             About
           </Typography>
           <Typography variant="body1">
-            <h2>This is a test list of services:</h2>
             <p>
-              Hi, I'm bob. I do bob things, all day, every day, because I'm bob.
+              muskITeers is a Valley based MSP (Managed Service Provider) with decades of industry experience. We specialize in helping small and medium sized businesses build and maintain their environments. 
             </p>
           </Typography>
         </Card>
@@ -56,16 +64,30 @@ export default function Home(){
             Services
           </Typography>
           <Typography variant="body1">
-            <h6>This is a test list of services:</h6>
-            <ul>
-              <li>Test 1</li>
-              <li>Test 2</li>
-              <li>Test 3</li>
-              <li>Test 4</li>
-            </ul>
+            <p>
+              muskITeers offers a full range of business IT solutions and services. For a full list please <Link className={classes.mailtellinks} href="/services">{'click here'}</Link>.
+              <ul className={classes.servicelist}>
+                <li>Cloud Services like Office 365 and Google Workspaces</li>
+                <li>Website hosting and design</li>
+                <li>VoIP Setup and Maintenance</li>
+                <li>Computer and Server Backups</li>
+                <li>Server and Desktop support</li>
+                <li>Environment backups</li>
+              </ul>
+            </p>
           </Typography>
         </Card>
-      </CssBaseline>
+        <Card className={classes.card}>          
+          <Typography variant="h4" className={classes.title}>
+            Contact
+          </Typography>
+          <Typography variant="body1">
+            <p>
+              You can emails us directly at <a className={classes.mailtellinks} href="mailto:contact@muskiteers.com" data-rel="external">contact@muskiteers.com</a>, call us at <a className={classes.mailtellinks} href="tel:1231231234" data-rel="external">123-123-1234</a>, or use the contact form below.
+            </p>
+          </Typography>
+        </Card>
+      </div>
     )
 }
 

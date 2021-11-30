@@ -26,6 +26,16 @@ const theme = createTheme({
       background: {
         default: '#151515',
         paper: '#111822'
+      },
+      action: {
+        active: '#ff79b0',
+        activeOpacity: 1,
+        hover: '#ff4081',
+        hoverOpacity: 0.7,
+        focus: '#c60055',
+        focusOpacity: 1,
+        selected: '#5c67a3',
+        selectedOpacity: 1
       }
     }
   })
