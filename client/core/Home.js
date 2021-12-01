@@ -1,11 +1,12 @@
 import React from 'react'
 import { makeStyles } from '@mui/styles'
 import Card from '@mui/material/Card'
-import CardContent from '@mui/material/CardContent'
-import CardMedia from '@mui/material/CardMedia'
+// import CardContent from '@mui/material/CardContent'
+// import CardMedia from '@mui/material/CardMedia'
 import Typography from '@mui/material/Typography'
-import CssBaseline from '@mui/material/CssBaseline'
+// import CssBaseline from '@mui/material/CssBaseline'
 import Link from '@mui/material/Link'
+
 
 const useStyles = makeStyles(theme => ({
   card: {
