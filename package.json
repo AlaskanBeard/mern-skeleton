@@ -33,10 +33,10 @@
     "babel-loader": "8.1.0",
     "file-loader": "6.0.0",
     "nodemon": "^2.0.15",
-    "webpack": "4.42.1",
-    "webpack-cli": "3.3.11",
-    "webpack-dev-middleware": "3.7.2",
-    "webpack-hot-middleware": "2.25.0",
+    "webpack": "~5.64.4",
+    "webpack-cli": "~4.9.1",
+    "webpack-dev-middleware": "~5.2.2",
+    "webpack-hot-middleware": "2.25.1",
     "webpack-node-externals": "1.7.2"
   },
   "dependencies": {
@@ -76,10 +76,10 @@
     "repeat-string": "1.6.1",
     "snapdragon-node": "2.1.1",
     "upath": "1.2.0",
-    "webpack": "4.42.1",
-    "webpack-cli": "3.3.11",
-    "webpack-dev-middleware": "3.7.2",
-    "webpack-hot-middleware": "2.25.0",
+    "webpack": "~5.64.4",
+    "webpack-cli": "~4.9.1",
+    "webpack-dev-middleware": "~5.2.2",
+    "webpack-hot-middleware": "2.25.1",
     "webpack-node-externals": "1.7.2"
   }
 }
