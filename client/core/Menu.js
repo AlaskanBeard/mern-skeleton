@@ -6,6 +6,7 @@ import IconButton from '@mui/material/IconButton'
 import HomeIcon from '@mui/icons-material/Home'
 import Button from '@mui/material/Button'
 import {Link, withRouter} from 'react-router-dom'
+import { makeStyles } from '@mui/styles'
 
 const isActive = (history, path) => {
   if (history.location.pathname == path)
@@ -13,12 +14,19 @@ const isActive = (history, path) => {
   else
     return {color: '#ffffff'}
 }
+
+const useStyles = makeStyles(theme => ({
+  mailtellinks: {
+    color: '#fff',
+    selected: '#5c67a3'
+  }
+}))
 const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
-      <Typography variant="h6" color="inherit">
-        musk<i>IT</i>eers
-      </Typography>
+    <Link to="/">
+      <img src="../assets/images/logo.png"/>
+    </Link>
       <Link to="/">
         <IconButton aria-label="Home" style={isActive(history, "/")}>
           <HomeIcon/>
