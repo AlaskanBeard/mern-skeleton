@@ -27,8 +27,8 @@ const useStyles = makeStyles(theme => ({
 const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
-      <Link maxwidth="15%" to="/">
-            <img width="15%" src="../assets/images/logo.png"/>
+      <Link  to="/">
+            <img width="180px" src="../assets/images/logo.png"/>
       </Link>
       <Link to="/">
         <IconButton aria-label="Home" style={isActive(history, "/")}>
