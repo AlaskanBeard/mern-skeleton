@@ -37,7 +37,7 @@ const theme = createTheme({
         selected: '#5c67a3',
         selectedOpacity: 1
       }
-    }
+    },
   })
 
   export default theme
