@@ -1,7 +1,7 @@
 import React from 'react'
 import {Route, Switch} from 'react-router-dom'
 import Home from './core/Home'
-import Services from './core/Services'
+import Services from './core/services/Services'
 import Menu from './core/Menu'
 
 const MainRouter = () => {
